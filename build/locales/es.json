@@ -1,0 +1,240 @@
+{
+  "common": {
+    "convert": "Convertir",
+    "from": "De",
+    "to": "A",
+    "result": "Resultado",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "swap": "Intercambiar Unidades",
+    "clear": "Limpiar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "enterValue": "Introducir valor",
+    "formula": "Fórmula",
+    "steps": "Paso a paso",
+    "scientificNotation": "Notación científica"
+  },
+  "categories": {
+    "length": "Longitud",
+    "lengthDescription": "Convierte entre metros, pies, pulgadas y otras unidades de longitud",
+    "weight": "Peso",
+    "weightDescription": "Convierte entre kilogramos, libras, onzas y otras unidades de peso",
+    "volume": "Volumen",
+    "volumeDescription": "Convierte entre litros, galones, tazas y otras unidades de volumen",
+    "temperature": "Temperatura",
+    "temperatureDescription": "Convierte entre Celsius, Fahrenheit y Kelvin",
+    "area": "Área",
+    "areaDescription": "Convierte entre metros cuadrados, acres, pies cuadrados y otras unidades de área",
+    "speed": "Velocidad",
+    "speedDescription": "Convierte entre kilómetros por hora, millas por hora y otras unidades de velocidad",
+    "time": "Tiempo",
+    "timeDescription": "Convierte entre segundos, minutos, horas, días y otras unidades de tiempo",
+    "pressure": "Presión",
+    "pressureDescription": "Convierte entre pascal, bar, psi y otras unidades de presión",
+    "energy": "Energía",
+    "energyDescription": "Convierte entre julios, calorías, kilovatios hora y otras unidades de energía",
+    "power": "Potencia",
+    "powerDescription": "Convierte entre vatios, caballos de fuerza y otras unidades de potencia",
+    "dataStorage": "Almacenamiento de Datos",
+    "dataStorageDescription": "Convierte entre bytes, kilobytes, megabytes y otras unidades de datos",
+    "fuelEconomy": "Consumo de Combustible",
+    "fuelEconomyDescription": "Convierte entre millas por galón, kilómetros por litro y otras unidades de consumo de combustible"
+  },
+  "units": {
+    "meter": "Metro",
+    "kilometer": "Kilómetro",
+    "centimeter": "Centímetro",
+    "millimeter": "Milímetro",
+    "mile": "Milla",
+    "yard": "Yarda",
+    "foot": "Pie",
+    "inch": "Pulgada",
+    "kilogram": "Kilogramo",
+    "gram": "Gramo",
+    "milligram": "Miligramo",
+    "pound": "Libra",
+    "ounce": "Onza",
+    "ton": "Tonelada"
+  },
+  "errors": {
+    "invalidNumber": "Por favor, ingrese un número válido",
+    "invalidUnit": "Unidad seleccionada no válida",
+    "conversionFailed": "La conversión falló. Por favor, intente de nuevo.",
+    "networkError": "Error de red. Por favor, verifique su conexión.",
+    "required": "Este campo es obligatorio"
+  },
+  "contact": {
+    "getInTouch": "Contáctenos",
+    "followUs": "Síganos",
+    "sendMessage": "Enviar Mensaje",
+    "form": {
+      "name": "Su Nombre",
+      "email": "Su Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    },
+    "success": "¡Gracias por su mensaje! Nos pondremos en contacto pronto."
+  },
+  "sitemap": {
+    "title": "Mapa del Sitio",
+    "mainPages": "Páginas Principales",
+    "conversionCategories": "Categorías de Conversión",
+    "tools": "Herramientas y Recursos",
+    "calculators": "Calculadoras",
+    "resources": "Recursos"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Bienvenido a nuestro sitio web de conversión de unidades, una plataforma construida con pasión y propósito.",
+    "welcome": {
+      "title": "Nuestra Misión",
+      "content": "Nuestra misión es simple pero ambiciosa: crear la herramienta de conversión de unidades más fácil de usar, precisa y moderna disponible en línea."
+    },
+    "understanding": {
+      "title": "Por Qué Existimos",
+      "content": "Entendemos que las conversiones precisas y eficientes de unidades son esenciales en muchos aspectos de la vida, desde estudios académicos y proyectos profesionales hasta tareas cotidianas."
+    },
+    "commitment": {
+      "title": "Nuestro Compromiso",
+      "content": "A diferencia de las grandes corporaciones, somos un equipo pequeño e independiente impulsado por nuestro compromiso de servir a nuestros usuarios. No solo estamos construyendo un sitio web; estamos creando una herramienta que esperamos haga su vida diaria más fácil."
+    },
+    "improvement": {
+      "title": "Mejora Continua",
+      "content": "Estamos profundamente comprometidos con la mejora continua. Recopilamos activamente comentarios a través de encuestas de usuarios y formularios de contacto para hacer nuestra plataforma más eficiente y fácil de usar."
+    },
+    "features": {
+      "fast": "Súper Rápido",
+      "fastDescription": "Obtenga conversiones instantáneas con cálculos en tiempo real",
+      "multiPlatform": "Multi-Plataforma",
+      "multiPlatformDescription": "Acceda desde cualquier dispositivo, en cualquier lugar, en cualquier momento",
+      "multiLanguage": "Multi-Idioma",
+      "multiLanguageDescription": "Use el convertidor en su idioma preferido"
+    },
+    "stats": {
+      "categories": "Categorías de Conversión",
+      "units": "Unidades Soportadas",
+      "languages": "Idiomas Disponibles"
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "email": "contacto@unitconverter.com",
+      "sendMessage": "Enviar Mensaje",
+      "submitFeedback": "Enviar Comentarios"
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "roles": {
+        "developer": "Desarrollador Principal",
+        "designer": "Diseñador UX",
+        "scientist": "Científico de Datos"
+      }
+    },
+    "journey": {
+      "title": "Nuestra Trayectoria",
+      "timeline": {
+        "2023": {
+          "title": "Lanzamiento de Versión 2.0",
+          "description": "Actualización importante con nueva interfaz y categorías adicionales"
+        },
+        "2022": {
+          "title": "Lanzamiento de App Móvil",
+          "description": "Lanzamiento de aplicaciones nativas para iOS y Android"
+        },
+        "2021": {
+          "title": "Inicio del Proyecto",
+          "description": "Lanzamiento inicial del convertidor web"
+        }
+      }
+    }
+  },
+  "terms": {
+    "title": "Términos de Uso",
+    "subtitle": "Por favor, lea estos términos cuidadosamente antes de usar nuestro sitio web.",
+    "effectiveDate": "Estos términos están vigentes desde el 1 de enero de 2024",
+    "lastUpdated": "Última actualización: 1 de enero de 2024",
+    "acceptance": {
+      "title": "Aceptación de Términos",
+      "content": "Al usar este sitio web, acepta los términos y condiciones descritos en este documento. Si no está de acuerdo, absténgase de usar el sitio."
+    },
+    "usage": {
+      "title": "Uso del Sitio Web",
+      "content": "Puede usar este sitio web solo para fines personales y no comerciales. Acepta no usar el sitio de ninguna manera que pueda dañar, deshabilitar o perjudicar su funcionalidad."
+    },
+    "intellectual": {
+      "title": "Propiedad Intelectual",
+      "content": "Todo el contenido, incluyendo texto, gráficos, logotipos y software, es propiedad de nuestro sitio web y está protegido por las leyes de propiedad intelectual."
+    },
+    "disclaimer": {
+      "title": "Descargo de Responsabilidad",
+      "content": "Este sitio web se proporciona 'tal cual' sin garantías de ningún tipo, ya sean expresas o implícitas. No garantizamos la precisión, integridad o confiabilidad del contenido proporcionado."
+    },
+    "liability": {
+      "title": "Limitación de Responsabilidad",
+      "content": "No somos responsables de ningún daño que surja del uso del sitio web, incluyendo daños directos, indirectos, incidentales o consecuentes."
+    },
+    "links": {
+      "title": "Enlaces Externos",
+      "content": "Nuestro sitio web puede incluir enlaces a sitios web de terceros. No somos responsables del contenido, políticas o prácticas de estos sitios externos."
+    },
+    "modifications": {
+      "title": "Modificaciones a los Términos",
+      "content": "Nos reservamos el derecho de modificar estos Términos de Uso en cualquier momento. Cualquier cambio será efectivo inmediatamente después de su publicación."
+    },
+    "governing": {
+      "title": "Ley Aplicable",
+      "content": "Estos términos se regirán e interpretarán de acuerdo con las leyes de la jurisdicción en la que operamos."
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Su privacidad es importante para nosotros y estamos comprometidos a protegerla.",
+    "lastUpdated": "Última actualización: 1 de enero de 2024",
+    "intro": "Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos su información cuando visita nuestro sitio web.",
+    "dataCollection": {
+      "title": "Información que Recopilamos",
+      "content": "No requerimos ni recopilamos información personal de los usuarios para acceder a nuestro sitio web. Podemos recopilar información no identificable como tipo de navegador, tipo de dispositivo y dirección IP."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Utilizamos cookies para mejorar el rendimiento del sitio y proporcionar contenido personalizado. Puede controlar la configuración de cookies a través de su navegador."
+    },
+    "security": {
+      "title": "Seguridad de Datos",
+      "content": "Tomamos medidas razonables para proteger su información contra acceso, alteración o divulgación no autorizados."
+    },
+    "thirdParty": {
+      "title": "Servicios de Terceros",
+      "content": "Podemos utilizar herramientas y servicios de análisis de terceros para comprender el uso del sitio. Esta información se anonimiza y se utiliza solo para mejorar el sitio web."
+    },
+    "updates": {
+      "title": "Cambios en esta Política",
+      "content": "Podemos actualizar esta Política de Privacidad de vez en cuando para reflejar cambios en nuestras prácticas o requisitos legales."
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "settings": "Configuración",
+    "privacy": "Política de Privacidad",
+    "sitemap": "Mapa del Sitio"
+  },
+  "footer": {
+    "copyright": "© 2024 Unit Converter. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso",
+    "sitemap": "Mapa del Sitio"
+  },
+  "aboutUs": {
+    "title": "Sobre Nosotros",
+    "welcome": "Bienvenido a nuestro sitio web de conversión de unidades, una plataforma construida con pasión y propósito por un pequeño equipo de personas dedicadas.",
+    "mission": "Nuestra misión es simple pero ambiciosa: crear la herramienta de conversión de unidades más fácil de usar, precisa y moderna disponible en línea.",
+    "understanding": "Entendemos que las conversiones precisas y eficientes de unidades son esenciales en muchos aspectos de la vida, desde estudios académicos y proyectos profesionales hasta tareas cotidianas.",
+    "commitment": "A diferencia de las grandes corporaciones, somos un equipo pequeño e independiente impulsado por nuestro compromiso de servir a nuestros usuarios.",
+    "improvement": "También estamos profundamente comprometidos con la mejora continua. Recopilamos activamente comentarios a través de encuestas de usuarios y formularios de contacto.",
+    "thanks": "Gracias por elegir nuestro sitio web. Ya sea que esté convirtiendo unidades para trabajo, estudio o proyectos personales, estamos aquí para ayudarlo en cada paso del camino."
+  }
+} 

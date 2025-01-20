@@ -1,0 +1,43 @@
+{
+  "short_name": "Unit Converter",
+  "name": "Unit Converter - Fast & Accurate",
+  "description": "Fast and accurate unit converter with support for length, weight, volume, and more.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "prefer_related_applications": false,
+  "categories": ["utilities", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Length Converter",
+      "url": "/length",
+      "description": "Convert between different length units"
+    },
+    {
+      "name": "Weight Converter",
+      "url": "/weight",
+      "description": "Convert between different weight units"
+    }
+  ]
+} 
