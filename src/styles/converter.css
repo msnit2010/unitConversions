@@ -1,0 +1,100 @@
+.input-base {
+  @apply px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200;
+}
+
+.input-base:disabled,
+.input-base[readonly] {
+  @apply bg-gray-50 cursor-not-allowed;
+}
+
+/* Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Conversion Details Animation */
+.conversion-details-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.conversion-details-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.conversion-details-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.conversion-details-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Common Conversions Button Hover */
+.common-conversion-button {
+  @apply transition-all duration-200;
+}
+
+.common-conversion-button:hover {
+  @apply bg-gray-50 transform scale-[1.02];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Responsive Font Sizes */
+@screen sm {
+  .text-2xl {
+    @apply text-3xl;
+  }
+  
+  .text-xl {
+    @apply text-2xl;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+  
+  .print-only {
+    display: block;
+  }
+  
+  .conversion-result {
+    page-break-inside: avoid;
+  }
+} 
