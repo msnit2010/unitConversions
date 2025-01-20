@@ -1,0 +1,364 @@
+{
+  "common": {
+    "convert": "Convert",
+    "from": "From",
+    "to": "To",
+    "result": "Result",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "swap": "Swap Units",
+    "clear": "Clear",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "enterValue": "Enter value",
+    "formula": "Formula",
+    "steps": "Step by Step",
+    "scientificNotation": "Scientific Notation",
+    "back": "Back to Categories",
+    "quickTip": "Quick Tip",
+    "quickTipText": "Use the arrow keys to navigate between input fields, and press Enter to convert instantly",
+    "commonConversions": "Common Conversions",
+    "selectUnitsForFormula": "Select units to see the conversion formula",
+    "aria": {
+      "categoryCard": "Go to {category} conversion calculator"
+    },
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "remove": "Remove",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "help": "Help",
+    "close": "Close"
+  },
+  "theme": {
+    "toggle": "Change theme",
+    "light": "Switch to light mode",
+    "dark": "Switch to dark mode",
+    "system": "Use system theme",
+    "systemDescription": "Automatically matches your system's theme preference",
+    "themeChanged": "Theme updated",
+    "error": {
+      "save": "Could not save theme preference",
+      "load": "Could not load theme preference"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fast & Accurate Unit Conversions",
+      "subtitle": "Convert between any units instantly with our easy-to-use calculator"
+    },
+    "featured": {
+      "title": "Popular Conversions",
+      "length": "Convert between metric and imperial length units",
+      "weight": "Convert between different weight and mass units",
+      "temperature": "Convert between Celsius, Fahrenheit, and Kelvin"
+    },
+    "allCategories": {
+      "title": "All Conversion Categories"
+    }
+  },
+  "categories": {
+    "length": "Length",
+    "lengthDescription": "Convert between meters, feet, inches and other length units",
+    "weight": "Weight",
+    "weightDescription": "Convert between kilograms, pounds, ounces and other weight units",
+    "volume": "Volume",
+    "volumeDescription": "Convert between liters, gallons, cups and other volume units",
+    "temperature": "Temperature",
+    "temperatureDescription": "Convert between Celsius, Fahrenheit and Kelvin",
+    "area": "Area",
+    "areaDescription": "Convert between square meters, acres, square feet and other area units",
+    "speed": "Speed",
+    "speedDescription": "Convert between kilometers per hour, miles per hour and other speed units",
+    "time": "Time",
+    "timeDescription": "Convert between seconds, minutes, hours, days and other time units",
+    "pressure": "Pressure",
+    "pressureDescription": "Convert between pascal, bar, psi and other pressure units",
+    "energy": "Energy",
+    "energyDescription": "Convert between joules, calories, kilowatt hours and other energy units",
+    "power": "Power",
+    "powerDescription": "Convert between watts, horsepower and other power units",
+    "dataStorage": "Data Storage",
+    "dataStorageDescription": "Convert between bytes, kilobytes, megabytes and other data units",
+    "fuelEconomy": "Fuel Economy",
+    "fuelEconomyDescription": "Convert between miles per gallon, kilometers per liter and other fuel economy units"
+  },
+  "units": {
+    "meter": "Meter",
+    "kilometer": "Kilometer",
+    "centimeter": "Centimeter",
+    "millimeter": "Millimeter",
+    "mile": "Mile",
+    "yard": "Yard",
+    "foot": "Foot",
+    "inch": "Inch",
+    "nauticalMile": "Nautical Mile",
+    "kilogram": "Kilogram",
+    "gram": "Gram",
+    "milligram": "Milligram",
+    "pound": "Pound",
+    "ounce": "Ounce",
+    "ton": "Ton",
+    "stone": "Stone",
+    "liter": "Liter",
+    "milliliter": "Milliliter",
+    "cubicMeter": "Cubic Meter",
+    "gallon": "Gallon",
+    "quart": "Quart",
+    "pint": "Pint",
+    "cup": "Cup",
+    "fluidOunce": "Fluid Ounce",
+    "tablespoon": "Tablespoon",
+    "teaspoon": "Teaspoon",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin",
+    "squareMeter": "Square Meter",
+    "squareKilometer": "Square Kilometer",
+    "squareMile": "Square Mile",
+    "squareYard": "Square Yard",
+    "squareFoot": "Square Foot",
+    "squareInch": "Square Inch",
+    "hectare": "Hectare",
+    "acre": "Acre",
+    "meterPerSecond": "Meters per Second",
+    "kilometerPerHour": "Kilometers per Hour",
+    "milePerHour": "Miles per Hour",
+    "knot": "Knot",
+    "footPerSecond": "Feet per Second",
+    "second": "Second",
+    "minute": "Minute",
+    "hour": "Hour",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "year": "Year",
+    "decade": "Decade",
+    "century": "Century",
+    "pascal": "Pascal",
+    "kilopascal": "Kilopascal",
+    "bar": "Bar",
+    "psi": "PSI",
+    "atmosphere": "Atmosphere",
+    "torr": "Torr",
+    "millimeterOfMercury": "Millimeters of Mercury",
+    "joule": "Joule",
+    "kilojoule": "Kilojoule",
+    "calorie": "Calorie",
+    "kilocalorie": "Kilocalorie",
+    "watthour": "Watt-hour",
+    "kilowatthour": "Kilowatt-hour",
+    "electronvolt": "Electron Volt",
+    "britishThermalUnit": "British Thermal Unit",
+    "watt": "Watt",
+    "kilowatt": "Kilowatt",
+    "megawatt": "Megawatt",
+    "horsepower": "Horsepower",
+    "byte": "Byte",
+    "kilobyte": "Kilobyte",
+    "megabyte": "Megabyte",
+    "gigabyte": "Gigabyte",
+    "terabyte": "Terabyte",
+    "petabyte": "Petabyte",
+    "bit": "Bit",
+    "kibibyte": "Kibibyte",
+    "mebibyte": "Mebibyte",
+    "gibibyte": "Gibibyte",
+    "kilometerPerLiter": "Kilometers per Liter",
+    "milePerGallon": "Miles per Gallon",
+    "literPer100Kilometer": "Liters per 100 Kilometers"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidNumber": "Please enter a valid number",
+    "conversionFailed": "Conversion failed",
+    "invalidResponse": "Invalid response from server",
+    "networkError": "Network error occurred",
+    "timeout": "Request timed out",
+    "offline": "You are offline"
+  },
+  "contact": {
+    "getInTouch": "Get in Touch",
+    "followUs": "Follow Us",
+    "sendMessage": "Send Message",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "success": "Thank you for your message. We will get back to you soon!"
+  },
+  "sitemap": {
+    "title": "Sitemap",
+    "mainPages": "Main Pages",
+    "conversionCategories": "Conversion Categories",
+    "tools": "Tools & Resources",
+    "calculators": "Calculators",
+    "resources": "Resources"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Welcome to our unit converter website, a platform built with passion and purpose.",
+    "welcome": {
+      "title": "Our Mission",
+      "content": "Our mission is simple yet ambitious: to create the most user-friendly, accurate, and modern unit conversion tool available online."
+    },
+    "understanding": {
+      "title": "Why We're Here",
+      "content": "We understand that precise and efficient unit conversions are essential in many aspects of life, from academic studies and professional projects to everyday tasks."
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "content": "Unlike large corporations, we are a small, independent team driven by our commitment to serving our users. We're not just building a website; we're crafting a tool that we hope will make your day-to-day life easier."
+    },
+    "improvement": {
+      "title": "Continuous Improvement",
+      "content": "We're deeply invested in continuous improvement. We actively collect feedback through user surveys and contact forms to make our platform more efficient and user-friendly."
+    },
+    "features": {
+      "fast": "Lightning Fast",
+      "fastDescription": "Get instant conversions with real-time calculations",
+      "multiPlatform": "Multi-Platform",
+      "multiPlatformDescription": "Access from any device, anywhere, anytime",
+      "multiLanguage": "Multi-Language",
+      "multiLanguageDescription": "Use the converter in your preferred language"
+    },
+    "stats": {
+      "categories": "Conversion Categories",
+      "units": "Units Supported",
+      "languages": "Languages Available"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "email": "contact@unitconverter.com",
+      "sendMessage": "Send Message",
+      "submitFeedback": "Submit Feedback"
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "roles": {
+        "developer": "Lead Developer",
+        "designer": "UX Designer",
+        "scientist": "Data Scientist"
+      }
+    },
+    "journey": {
+      "title": "Our Journey",
+      "timeline": {
+        "2023": {
+          "title": "Launch of Version 2.0",
+          "description": "Major update with new UI and additional conversion categories"
+        },
+        "2022": {
+          "title": "Mobile App Release",
+          "description": "Launched native mobile applications for iOS and Android"
+        },
+        "2021": {
+          "title": "Project Started",
+          "description": "Initial release of the web-based converter"
+        }
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "subtitle": "Please read these terms carefully before using our website.",
+    "effectiveDate": "These terms are effective as of January 1, 2024",
+    "lastUpdated": "Last updated: January 1, 2024",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By using this website, you agree to the terms and conditions outlined in this document. If you do not agree, please refrain from using the site."
+    },
+    "usage": {
+      "title": "Use of the Website",
+      "content": "You may use this website for personal and non-commercial purposes only. You agree not to use the site in any way that may damage, disable, or impair its functionality."
+    },
+    "intellectual": {
+      "title": "Intellectual Property",
+      "content": "All content, including text, graphics, logos, and software, is the property of our website and is protected by intellectual property laws."
+    },
+    "disclaimer": {
+      "title": "Disclaimer of Warranties",
+      "content": "This website is provided 'as is' without any warranties of any kind, either express or implied. We do not guarantee the accuracy, completeness, or reliability of the content provided."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "We are not responsible for any damages arising from your use of the website, including direct, indirect, incidental, or consequential damages."
+    },
+    "links": {
+      "title": "External Links",
+      "content": "Our website may include links to third-party websites. We are not responsible for the content, policies, or practices of these external sites."
+    },
+    "modifications": {
+      "title": "Modifications to the Terms",
+      "content": "We reserve the right to modify these Terms of Use at any time. Any changes will be effective immediately upon posting."
+    },
+    "governing": {
+      "title": "Governing Law",
+      "content": "These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which we operate."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is important to us, and we are committed to protecting it.",
+    "lastUpdated": "Last updated: January 1, 2024",
+    "intro": "This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.",
+    "dataCollection": {
+      "title": "Information We Collect",
+      "content": "We do not require or collect any personal information from users to access our website. We may collect non-identifiable information such as browser type, device type, and IP address."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "We use cookies to enhance site performance and provide personalized content. You can control cookie settings through your browser."
+    },
+    "security": {
+      "title": "Data Security",
+      "content": "We take reasonable measures to protect your information from unauthorized access, alteration, or disclosure."
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "content": "We may use third-party tools and analytics services to understand site usage. This information is anonymized and used only to improve the website."
+    },
+    "updates": {
+      "title": "Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "sitemap": "Sitemap",
+    "aria": {
+      "mainMenu": "Main Menu",
+      "languageSelector": "Language Selector",
+      "themeToggle": "Theme Toggle"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Unit Converter. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "sitemap": "Sitemap"
+  },
+  "converter": {
+    "value": "Value",
+    "fromUnit": "From Unit",
+    "toUnit": "To Unit",
+    "convert": "Convert",
+    "result": "Result",
+    "formula": "Formula",
+    "steps": "Steps",
+    "swap": "Swap Units"
+  }
+} 

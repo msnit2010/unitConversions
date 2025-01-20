@@ -1,0 +1,1185 @@
+sifann@NP-S-NAEEM1:~/workspace/server$ npm test server/__tests__/converter.test.js
+
+> unit-converter-server@1.0.0 test
+> jest server/__tests__/converter.test.js
+
+  console.log
+    Conversion request: {
+      category: 'length',
+      fromUnit: 'meter',
+      toUnit: 'kilometer',
+      value: 1000
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'length',
+      fromUnit: 'meter',
+      toUnit: 'kilometer',
+      value: 1000
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'length', fromUnit: 'invalid', toUnit: 'meter', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'length',
+      fromUnit: 'invalid',
+      toUnit: 'meter',
+      value: 1,
+      error: 'Invalid unit "invalid" for category length'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:43:22)
+
+  console.log
+    Conversion request: {
+      category: 'length',
+      fromUnit: 'meter',
+      toUnit: 'kilometer',
+      value: 0
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarekilometer',
+      value: 1000000
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarekilometer',
+      value: 1000000
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'invalid', toUnit: 'meter', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'area',
+      fromUnit: 'invalid',
+      toUnit: 'meter',
+      value: 1,
+      error: 'Invalid unit "invalid" for category area'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:43:22)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarekilometer',
+      value: 0
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'volume',
+      fromUnit: 'liter',
+      toUnit: 'milliliter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'volume',
+      fromUnit: 'liter',
+      toUnit: 'milliliter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'volume', fromUnit: 'invalid', toUnit: 'meter', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'volume',
+      fromUnit: 'invalid',
+      toUnit: 'meter',
+      value: 1,
+      error: 'Invalid unit "invalid" for category volume'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:43:22)
+
+  console.log
+    Conversion request: {
+      category: 'volume',
+      fromUnit: 'liter',
+      toUnit: 'milliliter',
+      value: -1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'weight', fromUnit: 'kilogram', toUnit: 'gram', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'weight', fromUnit: 'kilogram', toUnit: 'gram', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'weight', fromUnit: 'invalid', toUnit: 'meter', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'weight',
+      fromUnit: 'invalid',
+      toUnit: 'meter',
+      value: 1,
+      error: 'Invalid unit "invalid" for category weight'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:43:22)
+
+  console.log
+    Conversion request: { category: 'weight', fromUnit: 'kilogram', toUnit: 'gram', value: -1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'temperature',
+      fromUnit: 'celsius',
+      toUnit: 'fahrenheit',
+      value: 0
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'temperature',
+      fromUnit: 'celsius',
+      toUnit: 'fahrenheit',
+      value: 0
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'temperature',
+      fromUnit: 'invalid',
+      toUnit: 'meter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'temperature',
+      fromUnit: 'invalid',
+      toUnit: 'meter',
+      value: 1,
+      error: 'Invalid temperature conversion from invalid to meter'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:43:22)
+
+  console.log
+    Conversion request: {
+      category: 'temperature',
+      fromUnit: 'celsius',
+      toUnit: 'fahrenheit',
+      value: -40
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'hectare',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'squaremeter', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'hectare',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'acre',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'hectare', toUnit: 'hectare', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'hectare', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'squaremeter', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'acre',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'hectare', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'squarefoot', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'squareinch', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'squareyard', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'squaremile', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'hectare',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'squarefoot', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'hectare',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'squareinch', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'hectare',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'squareyard', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareyard',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'squarekilometer',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'hectare',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'squaremile', toUnit: 'acre', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'squareinch',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'squareyard',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremile',
+      toUnit: 'squaremile',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'hectare',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: { category: 'area', fromUnit: 'acre', toUnit: 'squaremeter', value: 1 }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarefoot',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'invalidunit',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'area',
+      fromUnit: 'squareKilometer',
+      toUnit: 'invalidUnit',
+      value: 1,
+      error: 'Invalid unit "invalidUnit" for category area'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:137:20)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'square_kilometer',
+      toUnit: 'squaremeter',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.error
+    Conversion error details: {
+      category: 'area',
+      fromUnit: 'square_kilometer',
+      toUnit: 'squaremeter',
+      value: 1,
+      error: 'Invalid unit "square_kilometer" for category area'
+    }
+
+       96 |     };
+       97 |   } catch (error) {
+    >  98 |     console.error('Conversion error details:', {
+          |             ^
+       99 |       category,
+      100 |       fromUnit,
+      101 |       toUnit,
+
+      at error (utils/converter.js:98:13)
+      at Object.convert (__tests__/converter.test.js:151:30)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarekilometer',
+      value: 0
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squarekilometer',
+      toUnit: 'squareinch',
+      value: 1000
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squareinch',
+      toUnit: 'squarekilometer',
+      value: 0.000001
+    }
+
+      at log (utils/converter.js:51:13)
+
+  console.log
+    Conversion request: {
+      category: 'area',
+      fromUnit: 'squaremeter',
+      toUnit: 'squarefoot',
+      value: 1
+    }
+
+      at log (utils/converter.js:51:13)
+
+ FAIL  __tests__/converter.test.js
+  Unit Converter
+    ✓ returns correct response structure (3 ms)
+    length conversions
+      ✓ converts basic units correctly (84 ms)
+      ✓ handles case-insensitive unit names (7 ms)
+      ✓ handles invalid units gracefully (54 ms)
+      ✓ handles zero and negative values (7 ms)
+    area conversions
+      ✓ converts basic units correctly (5 ms)
+      ✓ handles case-insensitive unit names (4 ms)
+      ✓ handles invalid units gracefully (15 ms)
+      ✓ handles zero and negative values (5 ms)
+      ✓ converts from squaremeter to squaremeter (2 ms)
+      ✓ converts from squaremeter to squarekilometer (2 ms)
+      ✓ converts from squaremeter to hectare (1 ms)
+      ✓ converts from squaremeter to acre (2 ms)
+      ✓ converts from squaremeter to squarefoot (2 ms)
+      ✓ converts from squaremeter to squareinch (3 ms)
+      ✓ converts from squaremeter to squareyard (2 ms)
+      ✓ converts from squaremeter to squaremile (1 ms)
+      ✓ converts from squarekilometer to squaremeter (2 ms)
+      ✓ converts from squarekilometer to squarekilometer (2 ms)
+      ✓ converts from squarekilometer to hectare (2 ms)
+      ✓ converts from squarekilometer to acre (3 ms)
+      ✓ converts from squarekilometer to squarefoot (2 ms)
+      ✓ converts from squarekilometer to squareinch (2 ms)
+      ✓ converts from squarekilometer to squareyard (1 ms)
+      ✓ converts from squarekilometer to squaremile (1 ms)
+      ✓ converts from hectare to squaremeter (2 ms)
+      ✓ converts from hectare to squarekilometer (2 ms)
+      ✓ converts from hectare to hectare (2 ms)
+      ✓ converts from hectare to acre (2 ms)
+      ✓ converts from hectare to squarefoot (2 ms)
+      ✓ converts from hectare to squareinch (2 ms)
+      ✓ converts from hectare to squareyard (6 ms)
+      ✓ converts from hectare to squaremile (2 ms)
+      ✓ converts from acre to squaremeter (2 ms)
+      ✓ converts from acre to squarekilometer (1 ms)
+      ✓ converts from acre to hectare (1 ms)
+      ✓ converts from acre to acre (1 ms)
+      ✓ converts from acre to squarefoot (2 ms)
+      ✓ converts from acre to squareinch (2 ms)
+      ✓ converts from acre to squareyard (2 ms)
+      ✓ converts from acre to squaremile (2 ms)
+      ✓ converts from squarefoot to squaremeter (2 ms)
+      ✓ converts from squarefoot to squarekilometer (2 ms)
+      ✓ converts from squarefoot to hectare (2 ms)
+      ✓ converts from squarefoot to acre (2 ms)
+      ✓ converts from squarefoot to squarefoot (2 ms)
+      ✓ converts from squarefoot to squareinch (1 ms)
+      ✓ converts from squarefoot to squareyard (2 ms)
+      ✓ converts from squarefoot to squaremile (2 ms)
+      ✓ converts from squareinch to squaremeter (2 ms)
+      ✓ converts from squareinch to squarekilometer (2 ms)
+      ✓ converts from squareinch to hectare (1 ms)
+      ✓ converts from squareinch to acre (1 ms)
+      ✓ converts from squareinch to squarefoot (2 ms)
+      ✓ converts from squareinch to squareinch (1 ms)
+      ✓ converts from squareinch to squareyard (2 ms)
+      ✓ converts from squareinch to squaremile (2 ms)
+      ✓ converts from squareyard to squaremeter (5 ms)
+      ✓ converts from squareyard to squarekilometer (2 ms)
+      ✓ converts from squareyard to hectare (2 ms)
+      ✓ converts from squareyard to acre (2 ms)
+      ✓ converts from squareyard to squarefoot (2 ms)
+      ✓ converts from squareyard to squareinch (1 ms)
+      ✓ converts from squareyard to squareyard (1 ms)
+      ✓ converts from squareyard to squaremile (2 ms)
+      ✓ converts from squaremile to squaremeter (1 ms)
+      ✓ converts from squaremile to squarekilometer (2 ms)
+      ✓ converts from squaremile to hectare (2 ms)
+      ✓ converts from squaremile to acre (2 ms)
+      ✓ converts from squaremile to squarefoot (2 ms)
+      ✓ converts from squaremile to squareinch (3 ms)
+      ✓ converts from squaremile to squareyard (2 ms)
+      ✓ converts from squaremile to squaremile (2 ms)
+      ✓ converts 1 squarekilometer to squaremeter (3 ms)
+      ✓ converts 1 hectare to squaremeter (2 ms)
+      ✓ converts 1 acre to squaremeter (1 ms)
+      ✓ converts 1 squarefoot to squaremeter (1 ms)
+      ✓ converts 1 squareinch to squaremeter (2 ms)
+      ✓ handles invalid area unit names (6 ms)
+      ✕ handles case variations correctly (5 ms)
+      ✓ handles zero values (1 ms)
+      ✓ handles very large values (1 ms)
+      ✕ handles very small values (8 ms)
+    volume conversions
+      ✓ converts basic units correctly (4 ms)
+      ✓ handles case-insensitive unit names (3 ms)
+      ✓ handles invalid units gracefully (7 ms)
+      ✓ handles zero and negative values (2 ms)
+    weight conversions
+      ✓ converts basic units correctly (2 ms)
+      ✓ handles case-insensitive unit names (2 ms)
+      ✓ handles invalid units gracefully (5 ms)
+      ✓ handles zero and negative values (2 ms)
+    temperature conversions
+      ✓ converts basic units correctly (2 ms)
+      ✓ handles case-insensitive unit names (2 ms)
+      ✕ handles invalid units gracefully (29 ms)
+      ✓ handles zero and negative values (2 ms)
+
+  ● Unit Converter › temperature conversions › handles invalid units gracefully
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected pattern: /Invalid unit/
+    Received message: "Conversion failed: Invalid temperature conversion from invalid to meter"
+
+          103 |       error: error.message
+          104 |     });
+        > 105 |     throw new Error(`Conversion failed: ${error.message}`);
+              |           ^
+          106 |   }
+          107 | };
+          108 |
+
+          at convert (utils/converter.js:105:11)
+          at Object.convert (__tests__/converter.test.js:43:22)
+
+      43 |         await expect(convert(category, 'invalid', 'meter', 1))
+      44 |           .rejects
+    > 45 |           .toThrow(/Invalid unit/);
+         |            ^
+      46 |       });
+      47 |
+      48 |       // Test zero and negative values
+
+      at Object.toThrow (node_modules/expect/build/index.js:218:22)
+      at Object.toThrow (__tests__/converter.test.js:45:12)
+
+  ● Unit Converter › area conversions › handles case variations correctly
+
+    Conversion failed: Invalid unit "square_kilometer" for category area
+
+      103 |       error: error.message
+      104 |     });
+    > 105 |     throw new Error(`Conversion failed: ${error.message}`);
+          |           ^
+      106 |   }
+      107 | };
+      108 |
+
+      at convert (utils/converter.js:105:11)
+      at Object.convert (__tests__/converter.test.js:151:30)
+
+  ● Unit Converter › area conversions › handles very small values
+
+    expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      170 |       const result = await convert('area', 'squareinch', 'squarekilometer', 0.000001);
+      171 |       expect(result.success).toBe(true);
+    > 172 |       expect(result.result.value).toBeGreaterThan(0);
+          |                                   ^
+      173 |     });
+      174 |   });
+      175 |
+
+      at Object.toBeGreaterThan (__tests__/converter.test.js:172:35)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 92 passed, 95 total
+Snapshots:   0 total
+Time:        0.879 s, estimated 1 s
+Ran all test suites matching /server\/__tests__\/converter.test.js/i.
+sifann@NP-S-NAEEM1:~/workspace/server$

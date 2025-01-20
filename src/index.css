@@ -1,0 +1,603 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-105;
+  }
+  
+  .input-base {
+    @apply rounded-lg border-gray-300 focus:border-primary-500 focus:ring-primary-500;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200;
+  }
+}
+
+:root {
+  /* Colors */
+  --color-primary: #2563eb;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #6366f1;
+  --color-secondary-light: #a5b4fc;
+  --color-secondary-dark: #4f46e5;
+  
+  /* Background colors */
+  --color-bg-default: #f8fafc;
+  --color-bg-paper: #ffffff;
+  --color-bg-subtle: rgba(37, 99, 235, 0.02);
+  --color-bg-hover: rgba(37, 99, 235, 0.04);
+  
+  /* Text colors */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-disabled: rgba(0, 0, 0, 0.38);
+  
+  /* Border colors */
+  --color-border: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+  
+  /* Spacing */
+  --spacing-touch: 48px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Animation */
+  --transition-fast: 150ms;
+  --transition-normal: 200ms;
+  --transition-slow: 300ms;
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  
+  /* Font families */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Poppins', var(--font-sans);
+  
+  /* Fluid font sizes */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-base: clamp(1rem, 0.925rem + 0.375vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.125rem + 0.625vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
+  --text-4xl: clamp(2.25rem, 1.875rem + 1.875vw, 3rem);
+  
+  /* Line heights */
+  --leading-none: 1;
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  
+  /* Letter spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+}
+
+/* Base styles */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  @apply antialiased;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-normal);
+}
+
+/* Mobile-first responsive typography */
+h1 {
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6;
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tighter);
+}
+
+h2 {
+  @apply text-xl md:text-2xl lg:text-3xl font-semibold mb-3 md:mb-4;
+  font-size: var(--text-3xl);
+}
+
+h3 {
+  @apply text-lg md:text-xl font-medium mb-2 md:mb-3;
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  @apply text-lg md:text-xl font-medium mb-2 md:mb-3;
+  font-size: var(--text-xl);
+}
+
+/* Touch-friendly interactive elements */
+button, 
+a[role="button"],
+.MuiButtonBase-root {
+  min-height: var(--spacing-touch) !important;
+  min-width: var(--spacing-touch) !important;
+}
+
+/* Ensure form inputs are touch-friendly */
+input,
+select,
+textarea,
+.MuiInputBase-root {
+  min-height: var(--spacing-touch) !important;
+  @apply px-3 py-2;
+}
+
+/* Responsive container padding */
+.MuiContainer-root {
+  @apply px-4 sm:px-6 md:px-8;
+}
+
+/* Touch-friendly list items */
+.MuiListItem-root {
+  min-height: var(--spacing-touch) !important;
+  @apply py-2;
+}
+
+/* Responsive spacing utilities */
+.responsive-gap {
+  @apply gap-4 md:gap-6 lg:gap-8;
+}
+
+.responsive-p {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+.responsive-m {
+  @apply m-4 md:m-6 lg:m-8;
+}
+
+/* Responsive grid layouts */
+.responsive-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6;
+}
+
+/* Mobile menu improvements */
+.MuiDrawer-paper {
+  min-width: 280px !important;
+  max-width: 100vw !important;
+}
+
+/* Improved touch targets for icons */
+.material-icons {
+  @apply flex items-center justify-center;
+  min-width: var(--spacing-touch);
+  min-height: var(--spacing-touch);
+}
+
+/* Focus styles for better accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-500;
+}
+
+/* Media query for hover-capable devices */
+@media (hover: hover) {
+  a:hover,
+  button:hover {
+    @apply opacity-80 transition-opacity;
+  }
+}
+
+/* Prevent text selection on interactive elements */
+button,
+.MuiButtonBase-root,
+.material-icons {
+  @apply select-none;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+    border-radius: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+    border-radius: 4px;
+    
+    &:hover {
+      @apply bg-gray-500;
+    }
+  }
+}
+
+/* Dark mode scrollbar */
+.dark .custom-scrollbar {
+  &::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+    
+    &:hover {
+      @apply bg-gray-500;
+    }
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Safe area insets for modern mobile devices */
+@supports(padding: max(0px)) {
+  .safe-bottom {
+    padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom));
+  }
+  
+  .safe-top {
+    padding-top: max(var(--spacing-md), env(safe-area-inset-top));
+  }
+}
+
+/* Modern form elements */
+.input-base {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-200;
+  background-color: #ffffff;
+  transition: all var(--transition-normal) var(--ease-out);
+  
+  &:hover {
+    border-color: #94a3b8;
+    background-color: #f1f5f9;
+  }
+  
+  &:focus {
+    @apply outline-none ring-2 ring-primary-500 ring-opacity-50;
+    border-color: #2563eb;
+    background-color: #f1f5f9;
+  }
+  
+  &:disabled {
+    @apply cursor-not-allowed opacity-60;
+    background-color: #f1f5f9;
+  }
+}
+
+/* Base button styles */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ease-in-out;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+/* Primary button */
+.btn-primary {
+  @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+}
+
+/* Secondary button */
+.btn-secondary {
+  @apply btn bg-secondary-600 text-white hover:bg-secondary-700 focus:ring-secondary-500;
+}
+
+/* Outline button */
+.btn-outline {
+  @apply btn border-2 border-primary-600 text-primary-600 hover:bg-primary-50 focus:ring-primary-500;
+}
+
+/* Ghost button */
+.btn-ghost {
+  @apply btn text-primary-600 hover:bg-primary-50 focus:ring-primary-500;
+}
+
+/* Button sizes */
+.btn-sm {
+  @apply px-3 py-1.5 text-sm;
+}
+
+.btn-lg {
+  @apply px-6 py-3 text-lg;
+}
+
+/* Disabled state for all buttons */
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Loading state */
+.btn-loading {
+  @apply relative text-transparent transition-none hover:text-transparent;
+}
+
+.btn-loading::after {
+  @apply absolute block w-4 h-4 border-2 border-current border-r-transparent rounded-full;
+  animation: spin 0.75s linear infinite;
+  content: "";
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Input styles */
+.input {
+  @apply block w-full px-4 py-2 rounded-lg border border-gray-300 bg-white;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  @apply disabled:bg-gray-100 disabled:cursor-not-allowed;
+}
+
+.input-error {
+  @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+}
+
+.input-success {
+  @apply border-green-500 focus:ring-green-500 focus:border-green-500;
+}
+
+/* Form label */
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+/* Form helper text */
+.form-helper {
+  @apply mt-1 text-sm text-gray-500;
+}
+
+.form-error {
+  @apply mt-1 text-sm text-red-500;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200;
+}
+
+.card-hover {
+  @apply transition-shadow duration-200 hover:shadow-md;
+}
+
+/* Animation utilities */
+.fade-enter {
+  @apply opacity-0;
+}
+
+.fade-enter-active {
+  @apply opacity-100 transition-opacity duration-200;
+}
+
+.fade-exit {
+  @apply opacity-100;
+}
+
+.fade-exit-active {
+  @apply opacity-0 transition-opacity duration-200;
+}
+
+/* Responsive text utilities */
+.text-responsive {
+  @apply text-sm sm:text-base md:text-lg;
+}
+
+.heading-responsive {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+}
+
+/* Dark mode support */
+.dark .card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.dark .input {
+  @apply bg-gray-800 border-gray-700 text-white;
+  @apply focus:ring-primary-500 focus:border-primary-500;
+}
+
+.dark .form-label {
+  @apply text-gray-300;
+}
+
+.dark .form-helper {
+  @apply text-gray-400;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-gray-200 dark:bg-gray-700;
+}
+
+.skeleton-text {
+  @apply h-4 bg-gray-200 rounded dark:bg-gray-700;
+}
+
+/* Tooltip */
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+/* Badge */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-primary {
+  @apply bg-primary-100 text-primary-800;
+}
+
+.badge-secondary {
+  @apply bg-secondary-100 text-secondary-800;
+}
+
+/* Alert */
+.alert {
+  @apply p-4 rounded-lg border;
+}
+
+.alert-info {
+  @apply bg-blue-50 border-blue-200 text-blue-800;
+}
+
+.alert-success {
+  @apply bg-green-50 border-green-200 text-green-800;
+}
+
+.alert-warning {
+  @apply bg-yellow-50 border-yellow-200 text-yellow-800;
+}
+
+.alert-error {
+  @apply bg-red-50 border-red-200 text-red-800;
+}
+
+/* Responsive utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  .touch-callout-none {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Text alignment utilities */
+  .text-left { text-align: left; }
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+  .text-justify { text-align: justify; }
+  
+  /* SM breakpoint */
+  @screen sm {
+    .sm\:text-left { text-align: left; }
+    .sm\:text-center { text-align: center; }
+    .sm\:text-right { text-align: right; }
+    .sm\:text-justify { text-align: justify; }
+  }
+  
+  /* MD breakpoint */
+  @screen md {
+    .md\:text-left { text-align: left; }
+    .md\:text-center { text-align: center; }
+    .md\:text-right { text-align: right; }
+    .md\:text-justify { text-align: justify; }
+  }
+  
+  /* LG breakpoint */
+  @screen lg {
+    .lg\:text-left { text-align: left; }
+    .lg\:text-center { text-align: center; }
+    .lg\:text-right { text-align: right; }
+    .lg\:text-justify { text-align: justify; }
+  }
+  
+  /* XL breakpoint */
+  @screen xl {
+    .xl\:text-left { text-align: left; }
+    .xl\:text-center { text-align: center; }
+    .xl\:text-right { text-align: right; }
+    .xl\:text-justify { text-align: justify; }
+  }
+  
+  /* 2XL breakpoint */
+  @screen 2xl {
+    .\32xl\:text-left { text-align: left; }
+    .\32xl\:text-center { text-align: center; }
+    .\32xl\:text-right { text-align: right; }
+    .\32xl\:text-justify { text-align: justify; }
+  }
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 1.5em;
+  max-width: 70ch; /* Optimal line length for readability */
+}
+
+/* Link styles */
+a {
+  color: #2563eb;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: all var(--transition-normal) var(--ease-out);
+  
+  &:hover {
+    color: #1d4ed8;
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* Text utilities */
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Font weight utilities */
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; } 
