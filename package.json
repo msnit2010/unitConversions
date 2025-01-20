@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:server": "cd server && npm start",
-    "dev": "concurrently \"npm start\" \"npm run start:server\""
+    "dev": "concurrently \"npm start\" \"npm run start:server\"",
+    "vercel-build": "npm run build && cd server && npm install"
   },
   "eslintConfig": {
     "extends": [

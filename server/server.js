@@ -65,23 +65,27 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start server function
-async function startServer() {
-  try {
-    // Initialize Redis if enabled
-    await connectRedis();
-    
-    app.listen(PORT, '0.0.0.0', () => {  // Listen on all interfaces
-      console.log(`Server running at http://0.0.0.0:${PORT}`);
-      console.log(`Environment: ${isDev ? 'development' : 'production'}`);
-      console.log('Available on:');
-      console.log(`  • Local:    http://localhost:${PORT}`);
-      console.log(`  • Network:  http://${getLocalIP()}:${PORT}`);
-    });
-  } catch (error) {
-    console.error('Failed to start server:', error);
-    process.exit(1);
-  }
+// Serve static files in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../build')));
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build', 'index.html'));
+  });
+}
+
+// Connect to Redis if enabled
+if (process.env.REDIS_ENABLED === 'true') {
+  connectRedis().catch(console.error);
+}
+
+// Vercel serverless function handler
+if (process.env.VERCEL) {
+  module.exports = app;
+} else {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 }
 
 // Helper to get local IP address
@@ -97,11 +101,4 @@ function getLocalIP() {
     }
   }
   return 'localhost'; // Fallback
-}
-
-// Start the server
-if (require.main === module) {
-  startServer();
-}
-
-module.exports = app; 
+} 
